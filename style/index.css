@@ -2,16 +2,17 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   height: 100%;
-  /* background-color: yellow; */
-  margin: auto;
 }
+
 .box-container {
   display: flex;
   height: 100%;
   margin: auto;
 }
+
 .table-wrapper {
   width: 80%;
   margin: auto;
@@ -52,11 +53,25 @@ body {
   color: #fff;
   order: 1;
 }
+
 .game-name {
   text-align: center;
   font-size: 1rem;
   transition: all 0.5s ease-in-out;
 }
+
 .game-name:hover {
   font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    height: auto;
+    margin-top: 2rem;
+  }
+  .col {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
 }
