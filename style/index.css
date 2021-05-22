@@ -23,15 +23,16 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* .table {
-/* margin: auto; */
-/* padding: 1rem; */
-/* background: red; 
-} */
+
+.table {
+  order: 0;
+  background: transparent;
+}
 
 .row {
   padding: 0.5rem;
 }
+
 .col {
   cursor: pointer;
   width: 8rem;
@@ -43,9 +44,19 @@ body {
   text-align: center;
   border: 2px solid white;
 }
+
 .chance {
   text-align: center;
   font-size: 2rem;
   margin-top: 1rem;
   color: #fff;
+  order: 1;
+}
+.game-name {
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.game-name:hover {
+  font-size: 1.05rem;
 }
