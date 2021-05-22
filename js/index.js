@@ -77,7 +77,7 @@ function play(event) {
       if (!checkWinner(i, j)); // check if we have winner then declare the winner else give chance to other player
       chance = chance === 0 ? 1 : 0; //  alter the chance var
       chanceUpdateOnUI();
-    }, 10);
+    }, 50);
   } else alert("Wrong click");
 }
 
