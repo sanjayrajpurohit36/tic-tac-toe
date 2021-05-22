@@ -73,9 +73,11 @@ function play(event) {
     let boxElement = document.getElementsByClassName(event.target.className)[0];
     boxElement.innerHTML = chance == 0 ? "X" : "O";
     tttm[i][j] = chance; // insert the number in matrix then only give the chance to other player
-    if (!checkWinner(i, j)); // check if we have winner then declare the winner else give chance to other player
-    chance = chance === 0 ? 1 : 0; //  alter the chance var
-    chanceUpdateOnUI();
+    setTimeout(() => {
+      if (!checkWinner(i, j)); // check if we have winner then declare the winner else give chance to other player
+      chance = chance === 0 ? 1 : 0; //  alter the chance var
+      chanceUpdateOnUI();
+    }, 10);
   } else alert("Wrong click");
 }
 
